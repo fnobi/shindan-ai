@@ -20,5 +20,5 @@ git clone git://github.com/fnobi/hinagata-nodebin.git
 ## usage
 
 ```
-hinataga-nodebin
+hinagata-nodebin
 ```
