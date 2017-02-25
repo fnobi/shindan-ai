@@ -7,7 +7,7 @@
                 "name": "yes",
                 "to": "r1"
             }, {
-                "name": "yes",
+                "name": "no",
                 "to": "r2"
             }]
         }

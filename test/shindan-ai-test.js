@@ -4,7 +4,7 @@ const async = require('async');
 const ShindanAI = require('../lib/ShindanAI');
 
 describe('shindan-ai', () => {
-    it('emit result', (done) => {
+    it('perform linear questions', (done) => {
         const option = require('./fixture/sample-option-linear1.json');
         const resultNames = [ 'cat', 'human' ];
 
