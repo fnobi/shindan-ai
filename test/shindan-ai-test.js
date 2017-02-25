@@ -1,4 +1,4 @@
-const expect = require('chai').expect;
+const assert = require('power-assert');
 const async = require('async');
 
 const ShindanAI = require('../lib/ShindanAI');
@@ -17,7 +17,7 @@ describe('shindan-ai', () => {
             });
 
             shindan.on('result', (result) => {
-                expect(result.name).is.eql(resultName);
+                assert.equal(result.name, resultName);
                 next();
             });
 
@@ -31,14 +31,14 @@ describe('shindan-ai', () => {
 
         shindan.on('question', (question) => {
             if (/ear/.test(question.name)) {
-                shindan.sendAnswer(0); // yes
+                shindan.sendAnswer(1); // yes
             } else if (/fur/.test(question.name)) {
                 shindan.sendAnswer(1); // no
             }
         });
 
         shindan.on('result', (result) => {
-            expect(result.name).is.eql('human');
+            assert.equal(result.name, 'human');
             done();
         });
 
