@@ -1,0 +1,45 @@
+{
+    "questions": {
+        "q1": {
+            "name": "Do you have ears?",
+            "option": [{
+                "name": "yes",
+                "score": {
+                    "r1": 1,
+                    "r2": 1
+                }
+            }, {
+                "name": "no",
+                "score": {
+                    "r3": 1
+                }
+            }]
+        },
+        "q2": {
+            "name": "Do you have fur?",
+            "option": [{
+                "name": "yes",
+                "score": {
+                    "r1": 1,
+                    "r3": 1
+                }
+            }, {
+                "name": "yes",
+                "score": {
+                    "r2": 1
+                }
+            }]
+        }
+    },
+    "results": {
+        "r1": {
+            "name": "cat"
+        },
+        "r2": {
+            "name": "human"
+        },
+        "r3": {
+            "name": "bird"
+        }
+    }
+}

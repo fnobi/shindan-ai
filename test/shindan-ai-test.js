@@ -24,4 +24,24 @@ describe('shindan-ai', () => {
             shindan.start();
         }, done);
     });
+
+    it('perform score questions', (done) => {
+        const option = require('./fixture/sample-option-score1.json');
+        const shindan = new ShindanAI(option);
+
+        shindan.on('question', (question) => {
+            if (/ear/.test(question.name)) {
+                shindan.sendAnswer(0); // yes
+            } else if (/fur/.test(question.name)) {
+                shindan.sendAnswer(1); // no
+            }
+        });
+
+        shindan.on('result', (result) => {
+            expect(result.name).is.eql('human');
+            done();
+        });
+
+        shindan.start();
+    });
 });
