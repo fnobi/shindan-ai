@@ -1,7 +1,7 @@
-const expect = require('chai').expect;
+const assert = require('power-assert');
 
 describe('node.js', () => {
     it('calculate addition', () => {
-        expect(3 + 2).to.be.equal(5);
+        assert.equal(3 + 2, 5);
     });
 });

@@ -26,10 +26,10 @@
   },
   "devDependencies": {
     "async": "^2.1.5",
-    "chai": "1.6.*",
     "grunt": "0.4.*",
     "grunt-release": "0.13.*",
-    "mocha": "1.11.*"
+    "mocha": "1.11.*",
+    "power-assert": "^1.4.2"
   },
   "bugs": {
     "url": "https://github.com/fnobi/shindan-ai/issues"
