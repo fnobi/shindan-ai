@@ -3,36 +3,13 @@ const async = require('async');
 
 const ShindanAI = require('../lib/ShindanAI');
 
-const SAMPLE_OPTION = {
-    initialSceneId: 'q1',
-    questions: {
-        q1: {
-            name: 'Do you have a tail?',
-            option: [{
-                name: 'yes',
-                to: 'r1'
-            }, {
-                name: 'yes',
-                to: 'r2'
-            }]
-        }
-    },
-    results: {
-        r1: {
-            name: 'cat'
-        },
-        r2: {
-            name: 'human'
-        }
-    }
-};
-
 describe('shindan-ai', () => {
     it('emit result', (done) => {
+        const option = require('./fixture/sample-option-linear1.json');
         const resultNames = [ 'cat', 'human' ];
 
         async.forEach(resultNames, (resultName, next) => {
-            const shindan = new ShindanAI(SAMPLE_OPTION);
+            const shindan = new ShindanAI(option);
 
             shindan.on('question', (question) => {
                 const index = resultNames.indexOf(resultName);
@@ -46,6 +23,5 @@ describe('shindan-ai', () => {
 
             shindan.start();
         }, done);
-
     });
 });

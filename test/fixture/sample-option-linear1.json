@@ -1,0 +1,23 @@
+{
+    "initialSceneId": "q1",
+    "questions": {
+        "q1": {
+            "name": "Do you have a tail?",
+            "option": [{
+                "name": "yes",
+                "to": "r1"
+            }, {
+                "name": "yes",
+                "to": "r2"
+            }]
+        }
+    },
+    "results": {
+        "r1": {
+            "name": "cat"
+        },
+        "r2": {
+            "name": "human"
+        }
+    }
+}
