@@ -31,7 +31,7 @@ describe('shindan-ai', () => {
 
         shindan.on('question', (question) => {
             if (/ear/.test(question.name)) {
-                shindan.sendAnswer(1); // yes
+                shindan.sendAnswer(0); // yes
             } else if (/fur/.test(question.name)) {
                 shindan.sendAnswer(1); // no
             }
