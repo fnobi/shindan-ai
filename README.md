@@ -1,24 +1,24 @@
-hinagata-nodebin
+shindan-ai
 ==============
 
-hinagata-nodebin client.
+shindan-ai client.
 
 ## install
 
 ### from npm
 
 ```
-npm install hinagata-nodebin
+npm install shindan-ai
 ```
 
 ### from github
 
 ```
-git clone git://github.com/fnobi/hinagata-nodebin.git
+git clone git://github.com/fnobi/shindan-ai.git
 ```
 
 ## usage
 
 ```
-hinagata-nodebin
+shindan-ai
 ```
