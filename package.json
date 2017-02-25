@@ -24,6 +24,7 @@
     "optimist": "0.5.*"
   },
   "devDependencies": {
+    "async": "^2.1.5",
     "chai": "1.6.*",
     "grunt": "0.4.*",
     "grunt-release": "0.13.*",
