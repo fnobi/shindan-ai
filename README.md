@@ -17,8 +17,8 @@ npm install shindan-ai
 git clone git://github.com/fnobi/shindan-ai.git
 ```
 
-## usage
+## cli usage
 
 ```
-shindan-ai
+shindan-ai <optionJsonfile>
 ```
