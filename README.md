@@ -1,6 +1,8 @@
 shindan-ai
 ==============
 
+[![Build Status](https://travis-ci.org/fnobi/shindan-ai.svg?branch=master)](https://travis-ci.org/fnobi/shindan-ai)
+
 shindan-ai client.
 
 ## install
